@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.18)  15 JUL 2021 18:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.18)  18 JUL 2021 18:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex
 (c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> (c:/texlive/2021/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
+L3 programming layer <2021-02-18> (./IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -479,21 +479,11 @@ Underfull \hbox (badness 1629) in paragraph at lines 128--129
 []\OT1/ptm/m/n/10 untuk lebih lengkap-nya ten-tang proses in-sta-lasi da-pat
  []
 
-
-LaTeX Warning: File `images/flowchart.png' not found on input line 133.
-
-
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:133: Package pdftex.def Error: File `images/flowchart.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.133 ...raphics[scale=0.18]{images/flowchart.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<images/flowchart.png, id=29, 1063.975pt x 1224.575pt>
+File: images/flowchart.png Graphic file (type png)
+<use images/flowchart.png>
+Package pdftex.def Info: images/flowchart.png  used on input line 133.
+(pdftex.def)             Requested size: 191.50723pt x 220.41399pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 133--135
 [][] 
@@ -504,36 +494,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
 
+<images/samples-directory.png, id=32, 212.29312pt x 402.00188pt>
+File: images/samples-directory.png Graphic file (type png)
+<use images/samples-directory.png>
+Package pdftex.def Info: images/samples-directory.png  used on input line 141.
+(pdftex.def)             Requested size: 191.06204pt x 361.79834pt.
 
-LaTeX Warning: File `images/samples-directory.png' not found on input line 141.
-
-
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:141: Package pdftex.def Error: File `images/samples-directory.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.141 ...[scale=0.9]{images/samples-directory.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Underfull \hbox (badness 1490) in paragraph at lines 140--142
+\OT1/ptm/m/n/10 IDE su-dah dibuka akan ter-li-hat seperti gam-bar berikut,
+ []
 
 
-LaTeX Warning: File `images/run-button.png' not found on input line 148.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:148: Package pdftex.def Error: File `images/run-button.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.148 ...raphics[scale=0.9]{images/run-button.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<images/run-button.png, id=34, 36.135pt x 33.12375pt>
+File: images/run-button.png Graphic file (type png)
+<use images/run-button.png>
+Package pdftex.def Info: images/run-button.png  used on input line 148.
+(pdftex.def)             Requested size: 32.52116pt x 29.81108pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 147--149
 []\OT1/ptm/m/n/10 Untuk men-jalankan sim-u-lasinya,
@@ -544,21 +522,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--149
 \OT1/ptm/m/n/10 kita da-pat menekan tombol []\OT1/pcr/m/n/10 Run[]
  []
 
-
-LaTeX Warning: File `images/simulation-window.png' not found on input line 150.
-
-
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:150: Package pdftex.def Error: File `images/simulation-window.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.150 ...scale=0.35]{images/simulation-window.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<images/simulation-window.png, id=35, 721.69624pt x 895.345pt>
+File: images/simulation-window.png Graphic file (type png)
+<use images/simulation-window.png>
+Package pdftex.def Info: images/simulation-window.png  used on input line 150.
+(pdftex.def)             Requested size: 252.59747pt x 313.37544pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 150--151
 []\OT1/ptm/m/n/10 Akan ter-li-hat se-buah \OT1/ptm/m/it/10 con-sole win-dow \OT1/ptm/m/n/10 yang
@@ -575,6 +543,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--151
  []
 
 
+Overfull \hbox (0.59747pt too wide) in paragraph at lines 150--151
+[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./images/flowchart.png> <./images/samples-directory.png> <./images/run-button.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 157--158
 []\OT1/ptm/m/n/10 Untuk meli-hat con-toh im-ple-men-tasi \OT1/ptm/m/it/10 icon\OT1/ptm/m/n/10 , da-pat
  []
@@ -589,96 +565,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
+<images/tictoc2.ned.png, id=49, 949.5475pt x 712.6625pt>
+File: images/tictoc2.ned.png Graphic file (type png)
+<use images/tictoc2.ned.png>
+Package pdftex.def Info: images/tictoc2.ned.png  used on input line 159.
+(pdftex.def)             Requested size: 237.38629pt x 178.16519pt.
 
-LaTeX Warning: File `images/tictoc2.ned.png' not found on input line 159.
-
-
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:159: Package pdftex.def Error: File `images/tictoc2.ned.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.159 ...phics[scale=0.25]{images/tictoc2.ned.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+[][]
+ []
 
 
 Underfull \hbox (badness 1571) in paragraph at lines 163--164
 \OT1/ptm/m/it/10 node\OT1/ptm/m/n/10 , klik menu []\OT1/pcr/m/n/10 Open Component Log for 'tic'[]\OT1/ptm/m/n/10 .
  []
 
+<images/tictoc3-log.ned.png, id=50, 645.41125pt x 265.99374pt>
+File: images/tictoc3-log.ned.png Graphic file (type png)
+<use images/tictoc3-log.ned.png>
+Package pdftex.def Info: images/tictoc3-log.ned.png  used on input line 165.
+(pdftex.def)             Requested size: 245.25882pt x 101.07866pt.
 
-LaTeX Warning: File `images/tictoc3-log.ned.png' not found on input line 165.
-
-
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:165: Package pdftex.def Error: File `images/tictoc3-log.ned.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.165 ...s[scale=0.38]{images/tictoc3-log.ned.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (3.25882pt too wide) in paragraph at lines 165--166
+[][] 
+ []
 
 
 Underfull \hbox (badness 4660) in paragraph at lines 171--172
 []\OT1/ptm/m/n/10 Timeout, can-celling timers; \OT1/ptm/m/it/10 Files: []\OT1/pcr/m/n/10 tictoc8.ned[]\OT1/ptm/m/n/10 ,
  []
 
-
-LaTeX Warning: File `images/tictoc10.ned.png' not found on input line 177.
-
-
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:177: Package pdftex.def Error: File `images/tictoc10.ned.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.177 ...hics[scale=0.25]{images/tictoc10.ned.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `images/tictoc14.ned.png' not found on input line 182.
-
-
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:182: Package pdftex.def Error: File `images/tictoc14.ned.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.182 ...hics[scale=0.23]{images/tictoc14.ned.png}
-                                                  \break
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<images/tictoc10.ned.png, id=51, 774.895pt x 1043.9pt>
+File: images/tictoc10.ned.png Graphic file (type png)
+<use images/tictoc10.ned.png>
+Package pdftex.def Info: images/tictoc10.ned.png  used on input line 177.
+(pdftex.def)             Requested size: 193.72327pt x 260.97435pt.
+<images/tictoc14.ned.png, id=52, 774.895pt x 1043.9pt>
+File: images/tictoc14.ned.png Graphic file (type png)
+<use images/tictoc14.ned.png>
+Package pdftex.def Info: images/tictoc14.ned.png  used on input line 182.
+(pdftex.def)             Requested size: 178.22209pt x 240.09195pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 182--184
 [][]
  []
 
 
-LaTeX Warning: File `images/fast-mode-button.png' not found on input line 188.
+Underfull \vbox (badness 6893) has occurred while \output is active []
 
-
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:188: Package pdftex.def Error: File `images/fast-mode-button.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.188 ...s[scale=0.8]{images/fast-mode-button.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+ [3 <./images/simulation-window.png> <./images/tictoc2.ned.png> <./images/tictoc3-log.ned.png> <./images/tictoc10.ned.png>]
+<images/fast-mode-button.png, id=64, 283.0575pt x 69.25874pt>
+File: images/fast-mode-button.png Graphic file (type png)
+<use images/fast-mode-button.png>
+Package pdftex.def Info: images/fast-mode-button.png  used on input line 188.
+(pdftex.def)             Requested size: 226.44629pt x 55.40706pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 187--189
 []\OT1/ptm/m/n/10 Buka dan jalankan sim-u-lasi \OT1/ptm/m/it/10 sam-
@@ -694,21 +634,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--189
 \OT1/ptm/m/n/10 mode []\OT1/pcr/m/n/10 Fast[] \OT1/ptm/m/n/10 seperti gam-bar berikut
  []
 
-
-LaTeX Warning: File `images/tic[1].png' not found on input line 191.
-
-
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:191: Package pdftex.def Error: File `images/tic[1].png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.191 ...degraphics[scale=0.53]{images/tic[1].png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<images/tic[1].png, id=65, 408.52625pt x 170.6375pt>
+File: images/tic[1].png Graphic file (type png)
+<use images/tic[1].png>
+Package pdftex.def Info: images/tic[1].png  used on input line 191.
+(pdftex.def)             Requested size: 216.51788pt x 90.43742pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 190--192
 []\OT1/ptm/m/n/10 Klik kanan pada []\OT1/pcr/m/n/10 tic[1][]\OT1/ptm/m/n/10 , lalu
@@ -719,21 +649,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--192
 []\OT1/pcr/m/n/10 Open Details for 'tic[1]'[]
  []
 
-
-LaTeX Warning: File `images/tic[1]-histogram.png' not found on input line 194.
-
-
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:194: Package pdftex.def Error: File `images/tic[1]-histogram.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 ...s[scale=0.5]{images/tic[1]-histogram.png}
-                                                  . \break
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<images/tic[1]-histogram.png, id=66, 476.78125pt x 432.61626pt>
+File: images/tic[1]-histogram.png Graphic file (type png)
+<use images/tic[1]-histogram.png>
+Package pdftex.def Info: images/tic[1]-histogram.png  used on input line 194.
+(pdftex.def)             Requested size: 238.39003pt x 216.3076pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 193--195
 []\OT1/ptm/m/n/10 Setelah itu klik kanan lagi pada
@@ -750,8 +670,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--195
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--195
-[]\OT1/ptm/m/n/10 . 
+Overfull \hbox (13.22005pt too wide) in paragraph at lines 193--195
+[]\OT1/ptm/m/n/10 .
  []
 
 
@@ -760,89 +680,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--195
  []
 
 
-LaTeX Warning: File `images/tic[1]-histogram2.png' not found on input line 197.
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
+
+ []
 
 
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:197: Package pdftex.def Error: File `images/tic[1]-histogram2.png' not found: using draft setting.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.197 ...scale=0.65]{images/tic[1]-histogram2.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<images/tic[1]-histogram2.png, id=67, 401.5pt x 332.24126pt>
+File: images/tic[1]-histogram2.png Graphic file (type png)
+<use images/tic[1]-histogram2.png>
+Package pdftex.def Info: images/tic[1]-histogram2.png  used on input line 197.
+(pdftex.def)             Requested size: 260.9719pt x 215.95424pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 196--198
 []\OT1/ptm/m/n/10 Maka akan muncul His-togram-nya seperti ini
  []
 
-[2]
+
+Overfull \hbox (33.30191pt too wide) in paragraph at lines 196--198
+[] 
+ []
+
+
 Overfull \hbox (20.88928pt too wide) in paragraph at lines 203--204
 []\OT1/ptm/m/n/10 Buka \OT1/ptm/m/it/10 sam-ple file []\OT1/pcr/m/n/10 tictoc/results/Tictoc15-#0.sca[] 
  []
 
+<images/browse-data-tab.png, id=68, 199.74625pt x 72.27pt>
+File: images/browse-data-tab.png Graphic file (type png)
+<use images/browse-data-tab.png>
+Package pdftex.def Info: images/browse-data-tab.png  used on input line 205.
+(pdftex.def)             Requested size: 129.83351pt x 46.97493pt.
 
-LaTeX Warning: File `images/browse-data-tab.png' not found on input line 205.
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
+[]\OT1/ptm/m/n/10 Pada bagian bawah, klik []\OT1/pcr/m/n/10 Browse Data[]
+ []
 
+[4 <./images/tictoc14.ned.png> <./images/fast-mode-button.png> <./images/tic[1].png> <./images/tic[1]-histogram.png> <./images/tic[1]-histogram2.png> <./images/browse-data-tab.png>]
+<images/vector-data.png, id=85, 724.7075pt x 274.02374pt>
+File: images/vector-data.png Graphic file (type png)
+<use images/vector-data.png>
+Package pdftex.def Info: images/vector-data.png  used on input line 208.
+(pdftex.def)             Requested size: 195.67363pt x 73.9874pt.
 
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:205: Package pdftex.def Error: File `images/browse-data-tab.png' not found: using draft setting.
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
+[]\OT1/ptm/m/n/10 Lalu pilih []\OT1/pcr/m/n/10 Vector[] \OT1/ptm/m/n/10 data
+ []
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.205 ...s[scale=0.65]{images/browse-data-tab.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<images/plot-data.png, id=86, 741.77126pt x 659.46375pt>
+File: images/plot-data.png Graphic file (type png)
+<use images/plot-data.png>
+Package pdftex.def Info: images/plot-data.png  used on input line 210.
+(pdftex.def)             Requested size: 252.19888pt x 224.2147pt.
 
-
-LaTeX Warning: File `images/vector-data.png' not found on input line 208.
-
-
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:208: Package pdftex.def Error: File `images/vector-data.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.208 ...phics[scale=0.27]{images/vector-data.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `images/plot-data.png' not found on input line 210.
+Underfull \hbox (badness 10000) in paragraph at lines 209--211
+[]\OT1/ptm/m/n/10 Lalu \OT1/ptm/m/it/10 Se-lect all\OT1/ptm/m/n/10 , klik kanan lalu []\OT1/pcr/m/n/10 Plot[]\OT1/ptm/m/n/10 .
+ []
 
 
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:210: Package pdftex.def Error: File `images/plot-data.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.210 ...raphics[scale=0.34]{images/plot-data.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Underfull \hbox (badness 10000) in paragraph at lines 209--211
+\OT1/ptm/m/n/10 Maka akan muncul data vi-su-al-nya.
+ []
 
 
-LaTeX Warning: File `images/tictoc18-analysis-file.png' not found on input line 218.
+Overfull \hbox (24.5289pt too wide) in paragraph at lines 209--211
+[] 
+ []
+
+<images/tictoc18-analysis-file.png, id=87, 987.69pt x 638.385pt>
+File: images/tictoc18-analysis-file.png Graphic file (type png)
+<use images/tictoc18-analysis-file.png>
+Package pdftex.def Info: images/tictoc18-analysis-file.png  used on input line 218.
+(pdftex.def)             Requested size: 177.77652pt x 114.90433pt.
+
+Underfull \hbox (badness 3189) in paragraph at lines 217--219
+[]\OT1/ptm/m/n/10 Kita da-pat men-ganal-i-sis data yang su-dah di \OT1/ptm/m/it/10 record
+ []
 
 
-c:/Users/Brainware/source/repos/ariebrainware/tugas7-jarkom/main.tex:218: Package pdftex.def Error: File `images/tictoc18-analysis-file.png' not found: using draft setting.
+Underfull \hbox (badness 10000) in paragraph at lines 217--219
+\OT1/ptm/m/n/10 den-gan mem-buka \OT1/ptm/m/it/10 file \OT1/ptm/m/n/10 yang berek-tensi \OT1/ptm/m/it/10 .anf \OT1/ptm/m/n/10 , lalu
+ []
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.218 ...=0.18]{images/tictoc18-analysis-file.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+
+Underfull \hbox (badness 2608) in paragraph at lines 217--219
+\OT1/ptm/m/n/10 pada tab \OT1/ptm/m/it/10 Datasets \OT1/ptm/m/n/10 da-pat dil-i-hat dataset yang terdaf-tar.
+ []
 
 
 ** Conference Paper **
@@ -855,7 +779,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3] (./main.aux)
+[5 <./images/vector-data.png> <./images/plot-data.png> <./images/tictoc18-analysis-file.png>] (./main.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -869,18 +793,18 @@ Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             After:  E29A0FB465E34C0D63B473293319EDE8;2604.
  ) 
 Here is how much of TeX's memory you used:
- 12159 strings out of 478994
- 181817 string characters out of 5862207
+ 11972 strings out of 478994
+ 176826 string characters out of 5862207
  676102 words of memory out of 5000000
- 29394 multiletter control sequences out of 15000+600000
+ 29234 multiletter control sequences out of 15000+600000
  439218 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,8n,75p,740b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,8n,75p,740b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 86328 bytes).
+Output written on main.pdf (5 pages, 571016 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 38 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 142 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
+ 40 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
