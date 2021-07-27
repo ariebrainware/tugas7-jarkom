@@ -58,29 +58,29 @@
 
 \begin{document}
 
-\title{Hands on with OMNet++}
+\title{Mengenal OMNet++ dan Algoritma Dijkstra}
 
 \author{\IEEEauthorblockN{Ricky}
-\IEEEauthorblockA{\textit{Teknik Komputer, Fakultas Teknologi Informasi} \\
-\textit{Institut Teknologi Batam}\\
-Batam, Indonesia \\
-1922022@student.iteba.ac.id}
-\and
-\IEEEauthorblockN{Muhamad Arie}
-\IEEEauthorblockA{\textit{Teknik Komputer, Fakultas Teknologi Informasi} \\
-\textit{Institut Teknologi Batam}\\
-Batam, Indonesia \\
-1922021@student.iteba.ac.id}
+  \IEEEauthorblockA{\textit{Teknik Komputer, Fakultas Teknologi Informasi} \\
+    \textit{Institut Teknologi Batam}\\
+    Batam, Indonesia \\
+    1922022@student.iteba.ac.id}
+  \and
+  \IEEEauthorblockN{Muhamad Arie}
+  \IEEEauthorblockA{\textit{Teknik Komputer, Fakultas Teknologi Informasi} \\
+    \textit{Institut Teknologi Batam}\\
+    Batam, Indonesia \\
+    1922021@student.iteba.ac.id}
 }
 \maketitle
 
 \begin{abstract}
-bla bla bla
+  Omnet++ merupakan aplikasi dasar berbasis open source yang dituliskan menggunakan c++ untuk mendesain simulasi dan topologi jaringan. Disini kami akan mencoba mendesain sebuah topologi jaringan berisi 6 node dan dengan menggunakan algoritma Dijkstra, kita akan mencari jarak tersingkatnya.
 
 \end{abstract}
 
 \begin{IEEEkeywords}
-Simulation, Networking, Collision, Detection, Error, Correction
+  Simulation, Networking, Collision, Detection, Error, Correction
 \end{IEEEkeywords}
 
 \section{Pengenalan}
@@ -89,7 +89,7 @@ dan menunjukkan beberapa fitur OMNeT ++ yang umum digunakan. Tutorial ini didasa
 simulasi contoh Tictoc, yang dapat ditemukan di direktori samples/tictoc dari instalasi OMNeT++, sehingga mahasiswa dapat langsung mencoba contoh tersebut. Dan juga terdapat simulasi contoh Aloha yang dapat ditemukan di direktori samples/aloha. Versi OMNeT: 5.6.2. Lokasi file sumber:
 tictoc1.ned, txc1.cc, omnetpp.ini
 
-\section{Teori dan Tools}\label{AA}
+\section{Teori dan Tools}\label{teori-tool}
 Simulasi jaringan adalah teknik di mana program perangkat lunak memodelkan perilaku jaringan dengan menghitung interaksi antara entitas jaringan yang berbeda (router, sakelar, node, titik akses, tautan, dll.). Kebanyakan simulator menggunakan simulasi kejadian diskrit - pemodelan sistem di mana variabel status berubah pada titik waktu tertentu. Perilaku jaringan dan berbagai aplikasi serta layanan yang didukungnya kemudian dapat diamati di lab uji; berbagai atribut \textit{environment} juga dapat dimodifikasi dengan cara yang terkontrol untuk menilai bagaimana jaringan / protokol akan berperilaku dalam kondisi yang berbeda.
 
 Emulasi jaringan memungkinkan pengguna untuk memperkenalkan perangkat dan aplikasi nyata ke dalam jaringan uji (disimulasikan) yang mengubah aliran paket sedemikian rupa untuk meniru perilaku jaringan langsung. Lalu lintas langsung dapat melewati simulator dan dipengaruhi oleh objek dalam simulasi.
@@ -110,7 +110,10 @@ Tools atau alat yang kami gunakan disini adalah \textit{fresh installed OMNet++}
   \item Secara umum, pemodelan dan simulasi sistem apa pun di mana pendekatan kejadian diskrit cocok, dan dapat dengan mudah dipetakan ke dalam entitas yang berkomunikasi dengan bertukar pesan.
 \end{itemize}
 
-\section{Pengerjaan}\label{AA}
+\subsection{Algoritma Dijkstra}
+bla bla bla
+
+\section{Pengerjaan}\label{pengerjaan}
 Bagian ini akan membahas sedikit tentang cara kami mengerjakan, mulai dari metodologi hingga langkah-langkahnya:
 
 \subsection{Metodologi}
@@ -152,7 +155,7 @@ Akan terlihat sebuah \textit{console window} yang akan menjalankan proses \texti
 Dibagian ini juga kita dapat melakukan beberapa hal lainnya, seperti \textit{Debugging} dan \textit{Logging}, dapat juga memvisualisasikan menggunakan \textit{Sequence Chart}.
 
 \subsection{Part 3: \href{https://docs.omnetpp.org/tutorials/tictoc/part3/}{Enhancing the 2-node TicToc}}
-Pada bagian ini kita dapat meningkatkan \textit{2-node TicToc} menggunakan \textit{icon, logging, state variables, parameters, timers, etc}. 
+Pada bagian ini kita dapat meningkatkan \textit{2-node TicToc} menggunakan \textit{icon, logging, state variables, parameters, timers, etc}.
 
 Untuk melihat contoh implementasi \textit{icon}, dapat membuka  dan menjalankan \textit{file} \codeword{tictoc2.ned}.\break
 
@@ -185,16 +188,16 @@ Dari simulasi tersebut kita dapat mengumpulkan statistik data antar node juga. S
 Kita dapat menampilkan Histogram data dengan cara sebagai berikut:
 \begin{enumerate}
   \item Buka dan jalankan simulasi \textit{sample file} \codeword{tictoc15.ned} dengan mode \codeword{Fast} seperti gambar berikut\break
-  \includegraphics[scale=0.8]{images/fast-mode-button.png}
-  
+        \includegraphics[scale=0.8]{images/fast-mode-button.png}
+
   \item Klik kanan pada \codeword{tic[1]}, lalu \codeword{Open Details for 'tic[1]'}\break
-  \includegraphics[scale=0.53]{images/tic[1].png}
-  
+        \includegraphics[scale=0.53]{images/tic[1].png}
+
   \item Setelah itu klik kanan lagi pada \codeword{hopCountStats}, lalu pilih \codeword{Open Graphical View for 'hopCountStats'}.\break
-  \includegraphics[scale=0.5]{images/tic[1]-histogram.png}. \break
-  
-  Maka akan muncul Histogramnya seperti ini\break
-  \includegraphics[scale=0.65]{images/tic[1]-histogram2.png}
+        \includegraphics[scale=0.5]{images/tic[1]-histogram.png}. \break
+
+        Maka akan muncul Histogramnya seperti ini\break
+        \includegraphics[scale=0.65]{images/tic[1]-histogram2.png}
 \end{enumerate}
 
 \subsection{Part 6: Visualizing the Results With the IDE}
@@ -202,30 +205,30 @@ Hasil dari \textit{static collection} dapat kita visualisasikan dalam berbagai m
 \begin{enumerate}
   \item Buka \textit{sample file} \codeword{tictoc/results/Tictoc15-#0.sca}
   \item Pada bagian bawah, klik \codeword{Browse Data}
-  \includegraphics[scale=0.65]{images/browse-data-tab.png}
-  \newpage
+        \includegraphics[scale=0.65]{images/browse-data-tab.png}
+        \newpage
   \item Lalu pilih \codeword{Vector} data
-  \includegraphics[scale=0.27]{images/vector-data.png}
+        \includegraphics[scale=0.27]{images/vector-data.png}
   \item Lalu \textit{Select all}, klik kanan lalu \codeword{Plot}. Maka akan muncul data visualnya.
-  \includegraphics[scale=0.34]{images/plot-data.png}
-  
-  \item Pada \textit{background chart}, klik kanan \codeword{Properties}. Pada tab \codeword{Lines} kita dapat memilih \textit{Line type} dan \textit{Symbol type}. Pilih \codeword{Dots} 
+        \includegraphics[scale=0.34]{images/plot-data.png}
+
+  \item Pada \textit{background chart}, klik kanan \codeword{Properties}. Pada tab \codeword{Lines} kita dapat memilih \textit{Line type} dan \textit{Symbol type}. Pilih \codeword{Dots}
   \item Selanjutnya \textit{Display Legend} dengan cara, pilih menu \codeword{Legend} \textit{Display Legend}. \textit{Position above} dan \textit{Anchoring north}. Klik \textit{Ok}
 \end{enumerate}
 
 \subsection{Part 7: Parameter Studies}
 Kita dapat menganalisis data yang sudah di \textit{record} dengan membuka \textit{file} yang berektensi \textit{.anf} , lalu pada tab \textit{Datasets} dapat dilihat dataset yang terdaftar.
 \includegraphics[scale=0.18]{images/tictoc18-analysis-file.png}
-  
+
 \section{Kesimpulan}
 Kita dapat simpulkan bahwa simulasi jaringan berguna untuk meniru jaringan nyata sehingga kita dapat merencanakan rancangan, melakukan \textit{debugging}, dan juga analisis jaringan.
 
-\bibliographystyle{bibliography/IEEEtran}
+\bibliographystyle{./bibliography/IEEEtran}
 \begin{thebibliography}{1}
-\bibitem{Installation Guide}\url{https://doc.omnetpp.org/omnetpp/InstallGuide.pdf}
-\bibitem{OMNet++ hands on Youtube}\url{https://youtu.be/u4T02tZuKrQ}
-\bibitem{OMNet++ TicToc tutorial}\url{https://docs.omnetpp.org/tutorials/tictoc}
-\bibitem{User Guide}\url{https://doc.omnetpp.org/omnetpp/UserGuide.pdf}
+  \bibitem{Installation Guide}\url{https://doc.omnetpp.org/omnetpp/InstallGuide.pdf}
+  \bibitem{OMNet++ hands on Youtube}\url{https://youtu.be/u4T02tZuKrQ}
+  \bibitem{OMNet++ TicToc tutorial}\url{https://docs.omnetpp.org/tutorials/tictoc}
+  \bibitem{User Guide}\url{https://doc.omnetpp.org/omnetpp/UserGuide.pdf}
 \end{thebibliography}
 
 \end{document}
