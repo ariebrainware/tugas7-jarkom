@@ -61,30 +61,30 @@
 \title{Mengenal OMNet++ dan Algoritma Dijkstra}
 
 \author{\IEEEauthorblockN{Ricky}
-  \IEEEauthorblockA{\textit{Teknik Komputer, Fakultas Teknologi Informasi} \\
-    \textit{Institut Teknologi Batam}\\
-    Batam, Indonesia \\
-    1922022@student.iteba.ac.id}
-  \and
-  \IEEEauthorblockN{Muhamad Arie}
-  \IEEEauthorblockA{\textit{Teknik Komputer, Fakultas Teknologi Informasi} \\
-    \textit{Institut Teknologi Batam}\\
-    Batam, Indonesia \\
-    1922021@student.iteba.ac.id}
+	\IEEEauthorblockA{\textit{Teknik Komputer, Fakultas Teknologi Informasi} \\
+		\textit{Institut Teknologi Batam}\\
+		Batam, Indonesia \\
+		1922022@student.iteba.ac.id}
+	\and
+	\IEEEauthorblockN{Muhamad Arie}
+	\IEEEauthorblockA{\textit{Teknik Komputer, Fakultas Teknologi Informasi} \\
+		\textit{Institut Teknologi Batam}\\
+		Batam, Indonesia \\
+		1922021@student.iteba.ac.id}
 }
 \maketitle
 
 \begin{abstract}
-  Omnet++ merupakan aplikasi dasar berbasis open source yang dituliskan menggunakan c++ untuk mendesain simulasi dan topologi jaringan. Disini kami akan mencoba mendesain sebuah topologi jaringan berisi 6 node dan dengan menggunakan algoritma Dijkstra, kita akan mencari jarak tersingkatnya.
+	Omnet++ merupakan aplikasi dasar berbasis open source yang dituliskan menggunakan c++ untuk mendesain simulasi dan topologi jaringan. Disini kami akan mencoba mendesain sebuah topologi jaringan berisi 6 node dan dengan menggunakan algoritma Dijkstra, kita akan mencari jarak tersingkatnya.
 
 \end{abstract}
 
 \begin{IEEEkeywords}
-  Simulation, Networking, Collision, Detection, Error, Correction
+	Simulation, Networking, Collision, Detection, Error, Correction
 \end{IEEEkeywords}
 
 \section{Pengenalan}
-Tugas ini bertujuan untuk memberikan pengalamanan kepada mahasiswa untuk menggunakan OMNeT++. Tutorial ini memandu mahasiswa dalam membuat dan bekerja dengan contoh model simulasi,
+Tugas ini bertujuan untuk memberikan pengalamanan kepada mahasiswa untuk menggunakan OMNeT++. Tutorial ini memandu mahasiswa dalam membuat dan bekerja dengan contoh model simulasi,
 dan menunjukkan beberapa fitur OMNeT ++ yang umum digunakan. Tutorial ini didasarkan pada
 simulasi contoh Tictoc, yang dapat ditemukan di direktori samples/tictoc dari instalasi OMNeT++, sehingga mahasiswa dapat langsung mencoba contoh tersebut. Dan juga terdapat simulasi contoh Aloha yang dapat ditemukan di direktori samples/aloha. Versi OMNeT: 5.6.2. Lokasi file sumber:
 tictoc1.ned, txc1.cc, omnetpp.ini
@@ -98,20 +98,21 @@ Metodologi tipikal adalah paket nyata(\textit{live packet}) dari aplikasi langsu
 
 Tools atau alat yang kami gunakan disini adalah \textit{fresh installed OMNet++} dengan samples bawaan yang sudah disediakan didalam folder instalasi.
 
+\subsection{OMNeT++}
 \textit{OMNeT++} adalah kerangka kerja simulasi jaringan peristiwa diskrit modular berorientasi objek. Memiliki arsitektur generik, sehingga dapat (dan telah) digunakan di berbagai domain masalah:
 
 \begin{itemize}
-  \item Permodelan jaringan komunikasi kabel dan nirkabel
-  \item Permodelan protokol
-  \item permodelan jaringan antrian
-  \item Permodelan multiprosesor dan sistem perangkat keras terdistribusi lainnya
-  \item Memvalidasi arsitektur perangkat keras
-  \item Mengevaluasi aspek kinerja sistem perangkat lunak yang kompleks
-  \item Secara umum, pemodelan dan simulasi sistem apa pun di mana pendekatan kejadian diskrit cocok, dan dapat dengan mudah dipetakan ke dalam entitas yang berkomunikasi dengan bertukar pesan.
+	\item Permodelan jaringan komunikasi kabel dan nirkabel
+	\item Permodelan protokol
+	\item permodelan jaringan antrian
+	\item Permodelan multiprosesor dan sistem perangkat keras terdistribusi lainnya
+	\item Memvalidasi arsitektur perangkat keras
+	\item Mengevaluasi aspek kinerja sistem perangkat lunak yang kompleks
+	\item Secara umum, pemodelan dan simulasi sistem apa pun di mana pendekatan kejadian diskrit cocok, dan dapat dengan mudah dipetakan ke dalam entitas yang berkomunikasi dengan bertukar pesan.
 \end{itemize}
 
 \subsection{Algoritma Dijkstra}
-bla bla bla
+Dijkstra adalah algoritma yang digunakan untuk mencari lintasan terpendek pada sebuah graf berarah. Contoh penerapan algoritma ini adalah lintasan terpendek yang menghubungkan antara dua kota ataupun titi berlainan tertentu.
 
 \section{Pengerjaan}\label{pengerjaan}
 Bagian ini akan membahas sedikit tentang cara kami mengerjakan, mulai dari metodologi hingga langkah-langkahnya:
@@ -121,11 +122,11 @@ Pada dasarnya tidak ada metode spesifik yang kami terapkan di \textit{Hands on} 
 
 \subsection{Langkah Instalasi}
 \begin{enumerate}
-  \item Buka \href{https://omnetpp.org/}{\textit{official site OMNet++}}, lalu kunjungi bagian \href{https://omnetpp.org/intro}{\textit{Introduction}}. Baca sekilas pengenalan dengan \textit{OMNet++}.
-  \item Download terlebih dahulu \textit{OMNet++} \href{https://omnetpp.org/download/}{disini}
-  \item \textit{Extract zip} yang sudah didownload ke direktori yang diinginkan(nantinya akan menjadi direktori instalasi \textit{OMNet++}
-  \item Buka direktori hasil \textit{extract} sebelumnya lalu \textit{double-click file} \codeword{mingwenv}, jalankan perintah \codeword{./configure} lalu tunggu hingga selesai. Setelah itu jalankan perintah \codeword{make} dan tunggu hingga selesai.
-  \item Setelah itu kita dapat membuka IDE dengan mengetikkan perintah \codeword{omnetpp} di terminal \codeword{mingwenv}. Dan proses instalasi selesai
+	\item Buka \href{https://omnetpp.org/}{\textit{official site OMNet++}}, lalu kunjungi bagian \href{https://omnetpp.org/intro}{\textit{Introduction}}. Baca sekilas pengenalan dengan \textit{OMNet++}.
+	\item Download terlebih dahulu \textit{OMNet++} \href{https://omnetpp.org/download/}{disini}
+	\item \textit{Extract zip} yang sudah didownload ke direktori yang diinginkan(nantinya akan menjadi direktori instalasi \textit{OMNet++}
+	\item Buka direktori hasil \textit{extract} sebelumnya lalu \textit{double-click file} \codeword{mingwenv}, jalankan perintah \codeword{./configure} lalu tunggu hingga selesai. Setelah itu jalankan perintah \codeword{make} dan tunggu hingga selesai.
+	\item Setelah itu kita dapat membuka IDE dengan mengetikkan perintah \codeword{omnetpp} di terminal \codeword{mingwenv}. Dan proses instalasi selesai
 \end{enumerate}
 
 untuk lebih lengkapnya tentang proses instalasi dapat mengikuti petunjuk \href{https://doc.omnetpp.org/omnetpp/InstallGuide.pdf}{disini}
@@ -170,9 +171,9 @@ untuk melihat contoh implementasi icon, silahkan buka \textit{file} \codeword{ti
 
 selain itu terdapat beberapa \textit{file sample} yang dapat kita coba:
 \begin{itemize}
-  \item Parameters; \textit{Files: }\codeword{tictoc4.ned}, \codeword{txc4.cc}
-  \item Timeout, cancelling timers; \textit{Files: }\codeword{tictoc8.ned}, \codeword{txc8.cc}
-  \item etc
+	\item Parameters; \textit{Files: }\codeword{tictoc4.ned}, \codeword{txc4.cc}
+	\item Timeout, cancelling timers; \textit{Files: }\codeword{tictoc8.ned}, \codeword{txc8.cc}
+	\item etc
 \end{itemize}
 
 \subsection{Part 4: Turning it Into a Real Network}
@@ -187,33 +188,33 @@ Dari simulasi tersebut kita dapat mengumpulkan statistik data antar node juga. S
 
 Kita dapat menampilkan Histogram data dengan cara sebagai berikut:
 \begin{enumerate}
-  \item Buka dan jalankan simulasi \textit{sample file} \codeword{tictoc15.ned} dengan mode \codeword{Fast} seperti gambar berikut\break
-        \includegraphics[scale=0.8]{images/fast-mode-button.png}
+	\item Buka dan jalankan simulasi \textit{sample file} \codeword{tictoc15.ned} dengan mode \codeword{Fast} seperti gambar berikut\break
+	      \includegraphics[scale=0.8]{images/fast-mode-button.png}
 
-  \item Klik kanan pada \codeword{tic[1]}, lalu \codeword{Open Details for 'tic[1]'}\break
-        \includegraphics[scale=0.53]{images/tic[1].png}
+	\item Klik kanan pada \codeword{tic[1]}, lalu \codeword{Open Details for 'tic[1]'}\break
+	      \includegraphics[scale=0.53]{images/tic[1].png}
 
-  \item Setelah itu klik kanan lagi pada \codeword{hopCountStats}, lalu pilih \codeword{Open Graphical View for 'hopCountStats'}.\break
-        \includegraphics[scale=0.5]{images/tic[1]-histogram.png}. \break
+	\item Setelah itu klik kanan lagi pada \codeword{hopCountStats}, lalu pilih \codeword{Open Graphical View for 'hopCountStats'}.\break
+	      \includegraphics[scale=0.5]{images/tic[1]-histogram.png}. \break
 
-        Maka akan muncul Histogramnya seperti ini\break
-        \includegraphics[scale=0.65]{images/tic[1]-histogram2.png}
+	      Maka akan muncul Histogramnya seperti ini\break
+	      \includegraphics[scale=0.65]{images/tic[1]-histogram2.png}
 \end{enumerate}
 
 \subsection{Part 6: Visualizing the Results With the IDE}
 Hasil dari \textit{static collection} dapat kita visualisasikan dalam berbagai model \textit{chart}. Berikut cara-caranya:
 \begin{enumerate}
-  \item Buka \textit{sample file} \codeword{tictoc/results/Tictoc15-#0.sca}
-  \item Pada bagian bawah, klik \codeword{Browse Data}
-        \includegraphics[scale=0.65]{images/browse-data-tab.png}
-        \newpage
-  \item Lalu pilih \codeword{Vector} data
-        \includegraphics[scale=0.27]{images/vector-data.png}
-  \item Lalu \textit{Select all}, klik kanan lalu \codeword{Plot}. Maka akan muncul data visualnya.
-        \includegraphics[scale=0.34]{images/plot-data.png}
+	\item Buka \textit{sample file} \codeword{tictoc/results/Tictoc15-#0.sca}
+	\item Pada bagian bawah, klik \codeword{Browse Data}
+	      \includegraphics[scale=0.65]{images/browse-data-tab.png}
+	      \newpage
+	\item Lalu pilih \codeword{Vector} data
+	      \includegraphics[scale=0.27]{images/vector-data.png}
+	\item Lalu \textit{Select all}, klik kanan lalu \codeword{Plot}. Maka akan muncul data visualnya.
+	      \includegraphics[scale=0.34]{images/plot-data.png}
 
-  \item Pada \textit{background chart}, klik kanan \codeword{Properties}. Pada tab \codeword{Lines} kita dapat memilih \textit{Line type} dan \textit{Symbol type}. Pilih \codeword{Dots}
-  \item Selanjutnya \textit{Display Legend} dengan cara, pilih menu \codeword{Legend} \textit{Display Legend}. \textit{Position above} dan \textit{Anchoring north}. Klik \textit{Ok}
+	\item Pada \textit{background chart}, klik kanan \codeword{Properties}. Pada tab \codeword{Lines} kita dapat memilih \textit{Line type} dan \textit{Symbol type}. Pilih \codeword{Dots}
+	\item Selanjutnya \textit{Display Legend} dengan cara, pilih menu \codeword{Legend} \textit{Display Legend}. \textit{Position above} dan \textit{Anchoring north}. Klik \textit{Ok}
 \end{enumerate}
 
 \subsection{Part 7: Parameter Studies}
@@ -225,10 +226,10 @@ Kita dapat simpulkan bahwa simulasi jaringan berguna untuk meniru jaringan nyata
 
 \bibliographystyle{./bibliography/IEEEtran}
 \begin{thebibliography}{1}
-  \bibitem{Installation Guide}\url{https://doc.omnetpp.org/omnetpp/InstallGuide.pdf}
-  \bibitem{OMNet++ hands on Youtube}\url{https://youtu.be/u4T02tZuKrQ}
-  \bibitem{OMNet++ TicToc tutorial}\url{https://docs.omnetpp.org/tutorials/tictoc}
-  \bibitem{User Guide}\url{https://doc.omnetpp.org/omnetpp/UserGuide.pdf}
+	\bibitem{Installation Guide}\url{https://doc.omnetpp.org/omnetpp/InstallGuide.pdf}
+	\bibitem{OMNet++ hands on Youtube}\url{https://youtu.be/u4T02tZuKrQ}
+	\bibitem{OMNet++ TicToc tutorial}\url{https://docs.omnetpp.org/tutorials/tictoc}
+	\bibitem{User Guide}\url{https://doc.omnetpp.org/omnetpp/UserGuide.pdf}
 \end{thebibliography}
 
 \end{document}
