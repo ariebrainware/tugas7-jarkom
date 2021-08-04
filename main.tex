@@ -122,7 +122,7 @@ Dijkstra adalah algoritma yang digunakan untuk mencari lintasan terpendek pada s
 	\item Set “Node belum dilewati” dengan jarak terkecil (dari node keberangkatan) sebagai “Node Keberangkatan” selanjutnya dan ulangi langkah e.
 \end{enumerate}
 \break
-\includegraphics[scale=0.5]{images/algoritma_di.PNG}
+\includegraphics[scale=0.5]{images/algoritma-dijkstra.png}
 
 \section{Pengerjaan}\label{pengerjaan}
 Bagian ini akan membahas sedikit tentang cara kami mengerjakan, mulai dari metodologi hingga langkah-langkahnya:
@@ -143,9 +143,14 @@ untuk lebih lengkapnya tentang proses instalasi dapat mengikuti petunjuk \href{h
 
 
 \subsection{Flowchart}
-
 \includegraphics[scale=0.18]{images/flowchart.png}
-\break
+
+\section{Scenario}
+Sebuah hypercube dengan dimensi d memiliki \(2^d\) node. Jika kita memberi nomor pada simpul dari 0 hingga \(2^d-1\) dan lihat angkanya sebagai biner d-digit nomor, maka setiap node akan terhubung ke d node lain yang berbeda hanya dalam satu bit. Artinya, misalkan d=4 misalnya, maka 0010 (simpul 2) akan terhubung ke 1010 (simpul 10), 0110 (simpul 6), 0000 (0) dan 0011 (simpul 3). Ini adalah bagaimana hypercube dibangun di hcube.ned; gerbang number adalah jumlah bit yang berbeda, yaitu node 0010's gerbang #2 menuju ke simpul 0110. Modul hypercube di hcube.ned mengambil dimensi d sebagai parameter.Itu juga membutuhkan parameter lain yang disebut nodetype: string yang menamai jenis modul yang akan digunakan sebagai simpul di hypercube. Di \textit{hc\_net.ned}, ketika jaringan hypercube dijelaskan, nodetype memberikan "HypercubeNode" nilai. HypercubeNode adalah tipe modul gabungan yang terdiri dari \textit{a} sumber lalu lintas (generator), wastafel lalu lintas dan modul router.
+
+Modul router bekerja dengan cara berikut. Ada slot waktu yang semua transmisi disinkronkan. Di setiap slot waktu, node router menerima paket dari tetangganya, memutuskan gerbang mana untuk setiap paket perlu dikirim, dan mengirimkannya di slot waktu berikutnya. Dalam hypercube, perutean sederhana: bilangan biner dari arus node dan node tujuan berbeda dalam  seberapa bit; sedikit kebutuhan untuk 'diperbaiki' dan paket harus dikirim melalui yang sesuai gerbang. Misalnya, jika kita berada di node 0010 dan tujuan paket adalah 1000, maka bit 3 dan bit 1 berbeda, sehingga paket dapat dikirim juga di gerbang 3 atau di gerbang 1. Jadi idealnya, paket apa pun bisa mencapai tujuannya dalam sejumlah hop yang merupakan jarak Hamming antara sumbernya dan nomor node biner tujuan. 
+
+Modul router menggunakan perutean defleksi. Ini berarti tidak ada buffer dalam modul router: jika lebih dari satu paket perlu dikirim melalui gerbang yang sama, lalu yang satu dibelokkan: dikirim keluar melalui gerbang lain. Paket dari pengguna lokal (sumber lalu lintas atau generator) hanya dapat diterima jika ada gerbang bebas yang tersisa di slot waktu yang diberikan, yaitu, kurang dari d paket perlu dirutekan. File \textit{hc\_rte.cc} berisi: Modul sederhana HCRouter yang mengimplementasikan perutean defleksi sederhana skema. 
 
 \section{Pembahasan}
 Bagian ini akan menjelaskan secara singkat mengenai tiap bagian-bagian dari \textit{Tutorial Learn OMNeT++ with TicToc}. Namun kita tidak perlu mengikuti seluruh bagian yang dijelaskan pada halaman ini, seperti contohnya membuat \textit{sample} dan menambahkan \textit{NED file}. Dikarenakan saat kita menginstal sudah disediakan seluruh contohnya pada direktori \textit{samples/} beserta penjelasannya.
@@ -208,7 +213,7 @@ Kita dapat menampilkan Histogram data dengan cara sebagai berikut:
 	      \includegraphics[scale=0.5]{images/tic[1]-histogram.png}. \break
 
 	      Maka akan muncul Histogramnya seperti ini\break
-	      \includegraphics[scale=0.65]{images/tic[1]-histogram2.png}
+	      \includegraphics[scale=0.32]{images/tic[1]-histogram2.png}
 \end{enumerate}
 
 \subsection{Part 6: Visualizing the Results With the IDE}
@@ -232,7 +237,7 @@ Kita dapat menganalisis data yang sudah di \textit{record} dengan membuka \texti
 \includegraphics[scale=0.18]{images/tictoc18-analysis-file.png}
 
 \section{Kesimpulan}
-Kita dapat simpulkan bahwa simulasi jaringan berguna untuk meniru jaringan nyata sehingga kita dapat merencanakan rancangan, melakukan \textit{debugging}, dan juga analisis jaringan.
+Kita dapat simpulkan bahwa simulasi jaringan berguna untuk meniru jaringan nyata sehingga kita dapat merencanakan rancangan, melakukan \textit{debugging}, dan juga analisis jaringan. Pada simulasi Algoritma Dijkstra dapat dilihat pergerakan paket dari satu node ke yang lainnya melalui jarak tersingkatnya.
 
 \bibliographystyle{./bibliography/IEEEtran}
 \begin{thebibliography}{1}
